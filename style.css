@@ -29,6 +29,8 @@ body {
     text-align: center;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .txts .light {
@@ -102,5 +104,44 @@ body {
 @media screen and (min-width:410px) {
     .card {
         max-width: 385px;
+    }
+}
+
+@media screen and (min-width:1150px) {
+    .card {
+        width: 1100px;
+    }
+    .txts {
+        width:500px;
+    }
+    .card-item {
+        width:320px;
+        height:250px;
+        padding-left:30px;
+        padding-right: 30px;
+    }
+    .cards {
+        display: grid;
+        grid-template-columns:320px 320px 320px;
+        grid-template-rows:125px 125px 125px auto;
+        grid-column-gap:22px;
+        grid-row-gap:10px;
+        margin-top: 50px;
+        grid-template-areas: ". builder ."
+                             "supervisor builder calculator"
+                             "supervisor karma calculator"
+                             ". karma .";
+    }
+    .karma {
+        grid-area: karma;
+    }
+    .supervisor {
+        grid-area: supervisor;
+    }
+    .builder {
+        grid-area: builder;
+    }
+    .calculator {
+        grid-area: calculator;
     }
 }
