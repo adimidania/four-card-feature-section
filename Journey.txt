@@ -1,0 +1,8 @@
+August 20 | 7.42 P.M 
+
+FIRST THING FIRST :
+So for this one, I will try to follow the mobile first approach, and use more semantic elements
+to avoid accessibility issues. Also, I will try my hard to follow the style-guide.md this time.
+AFTER LOOKING AT THE GIVEN DESIGN PICTURES :
+For the desktop versiom, I will be using Grid (I'm not really used to it, all of my previous projects were
+build using flexbox, so that will be a challenge for me :D)
