@@ -6,3 +6,11 @@ to avoid accessibility issues. Also, I will try my hard to follow the style-guid
 AFTER LOOKING AT THE GIVEN DESIGN PICTURES :
 For the desktop versiom, I will be using Grid (I'm not really used to it, all of my previous projects were
 build using flexbox, so that will be a challenge for me :D)
+
+
+REMARKS :
+1. Useful website for learning about box-shadow property : https://html-css-js.com/css/generator/box-shadow/ .
+QUESTIONS :
+1. Is it correct to let the card have a fixed width and height? like when we resize the browser, at some points,
+the width and the height doesn't change, is it acceptable? or do we need to let its width and height change according 
+to the widht and the height of the screen ? because for me, I always let them be fixed, and tbh is much easier for me!

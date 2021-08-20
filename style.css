@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+:root {
+    
+    --Red: hsl(0, 78%, 62%);
+    --Cyan: hsl(180, 62%, 55%);
+    --Orange: hsl(34, 97%, 64%);
+    --Blue: hsl(212, 86%, 64%);
+    --Dark-Blue: hsl(234, 12%, 34%);
+    --Grayish-Blue: hsl(229, 6%, 66%);
+    --Very-Light-Gray: hsl(0, 0%, 98%);
+}
+
+* {
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--Very-Light-Gray);
+}
+.card {
+    margin: 40px 10%; 
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.txts .light {
+    font-weight: 200;
+}
+
+.txts h1, .card-item h2 {
+    color: hsl(234, 12%, 34%) !important;
+}
+
+.txts p {
+    color:var(--Grayish-Blue);
+    font-size: 15px;
+    margin-top:13px;
+}
+
+.cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.card-item  {
+    background-color: #fff;
+    width: 100%;
+    box-shadow: 0px 5px 10px 0px var(--Grayish-Blue);
+    margin: 10px 0px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    padding:30px 20px;
+    padding-bottom: 15px;
+    /* So I need to let the border top be the same as the border radius */
+    border-top: 8px solid red; 
+}
+
+.card-item h2 {
+    font-size: 21px;
+}
+
+.card-item p {
+    color:var(--Grayish-Blue);
+    font-size: 15px;
+    margin-top:8px;
+    line-height: 28px;
+}
+.img-container {
+    margin-top:30px;
+    text-align: right;
+}
+
+.supervisor {
+    border-color: var(--Cyan);
+}
+
+.builder {
+    border-color: var(--Red);
+}
+
+.karma {
+    border-color: var(--Orange);
+}
+
+.calculator {
+    border-color: var(--Blue);
+}
+
+@media screen and (min-width:410px) {
+    .card {
+        max-width: 385px;
+    }
+}
